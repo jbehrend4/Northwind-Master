@@ -1,0 +1,148 @@
+﻿<div class="jumbotron my-2 mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 mb-0 text-dark">
+    <h1 class="display-4 text-dark">Northwind</h1>
+    <p class="lead">We have the best prices and selection of high quality foods &amp; beverages on the planet! Check out our featured discounts below.</p>
+    <hr class="my-4">
+    <p>For exceptional international cuisuine, look no further.</p>
+    <a class="btn btn-outline-primary btn-lg " href="#" role="button"><i class="fas fa-shopping-cart"></i> Order Now</a>
+</div>
+
+<div class="container text-dark">
+    <h1 id="birthdayAnimation">Happy Birthday!</h1>
+    <hr />
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 border border-info shadow-lg p-3 mb-5 mr-xl-1 mr-lg-1 mr-md-1 mr-sm-1 mr-1 mt-xl-1 mt-lg-1 mt-md-1 mt-sm-1 mt-1">
+            <h3 class="text-dark">Tis the seasoning</h3>
+            <p>
+                Order today! Save 12.5% on Chef Anton's Italian Seasoning. You don't want to make Chef Anton
+                mad, do you?
+            </p>
+            <br>
+            <h6 class="font-italic text-dark">Discount expires: 9/17/2019</h6>
+            <div id="firstCard">
+                <i class="fas fa-hand-point-right">&nbsp; Discount Code</i>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 border border-info shadow-lg p-3 mb-5 ml-xl-0 mr-xl-1 mr-lg-1 mr-md-1 mr-sm-1 mr-1 mt-xl-1 mt-lg-1 mt-md-1 mt-sm-1 mt-1">
+            <h3 class="text-dark">Go Green</h3>
+            <p>
+                Genen Shouyu goes on sale very rarely. Order now to save 10% off our already low price.
+            </p>
+            <br>
+            <h6 class="font-italic text-dark">Discount expires: 9/17/2019</h6>
+            <i class="fas fa-hand-point-right" id="secondCard">&nbsp; Discount Code</i>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 border border-info shadow-lg p-3 mb-5 mr-xl-1 mr-lg-1 mr-md-1 mr-sm-1 mr-1 mt-xl-1 mt-lg-1 mt-md-1 mt-sm-1 mt-1">
+            <h3 class="text-dark">Half Price</h3>
+            <p>
+                Just because you can't pronounce "Schoggi Schokolade" doesn't mean you shouldn't buy it.
+                Get it now for 50% off!
+            </p>
+            <br>
+            <h6 class="font-italic text-dark">Discount expires: 9/17/2019</h6>
+            <i class="fas fa-hand-point-right" id="thirdCard">&nbsp; Discount Code</i>
+        </div>
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Birthday</label>
+                    <input type="date" class="form-control">
+                </div>
+            </form>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Select your baloons</h5>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="red" />
+                        <label class="form-check-label" for="red">Red Balloons</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="blue" />
+                        <label class="form-check-label" for="blue">Blue Balloons</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="orange" />
+                        <label class="form-check-label" for="orange">Orange Balloons</label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-warning" id="allCheckControl">Check/Uncheck All</button>
+            <button type="button" class="btn btn-outline-danger" id="submitBalloons">Submit</button>
+        </div>
+        <div class="col-md-6">
+            <img src="~/media/red.png" id="redImg" style="visibility: hidden"/>
+            <img src="~/media/blue.png" id="blueImg" style="visibility: hidden"/>
+            <img src="~/media/orange.png" id="orangeImg" style="visibility: hidden"/>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="firstToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;" data-delay="7000">
+    <div class="toast-header" id="firstToast">
+        <strong class="mr-auto">Chef Anton's Italian Seasoning</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        Discount Code: <b>48731</b>
+    </div>
+</div>
+<div class="toast" id="secondToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;" data-delay="7000">
+    <div class="toast-header" id="secondToast">
+        <strong class="mr-auto">Genen Shouyou</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        Discount Code: <b>27156</b>
+    </div>
+</div>
+<div class="toast" id="thirdToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;" data-delay="7000">
+    <div class="toast-header" id="thirdToast">
+        <strong class="mr-auto">Schoggi Schokolade</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        Discount Code: <b>96174</b>
+    </div>
+</div>
+<div class="toast" id="noBalloonToast" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top: 0; right: 0;" data-delay="7000">
+    <div class="toast-header" id="noBalloonToast">
+        <strong class="mr-auto">Warning</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="toast-body">
+        You do not have any balloons selected.
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/client.js"></script>
+    <script>
+        $(function () {
+            $('#firstCard').click(function () {
+                $('#firstToast').toast('show');
+            });
+            $('#secondCard').click(function () {
+                $('#secondToast').toast('show');
+            });
+            $('#thirdCard').click(function () {
+                $('#thirdToast').toast('show');
+            });
+            $(document).on('keyup', function (e) {
+                if (e.key === 'Escape') {
+                    $('.toast').toast('hide');
+                }
+            });
+        });
+    </script>
+}

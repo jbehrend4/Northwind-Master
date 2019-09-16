@@ -1,0 +1,13 @@
+﻿h1 {
+    font-family: 'Lodrina Shadow';
+    color: slategray;
+    font-size: 3.5em;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1.animated {
+    display: inline-block;
+}
